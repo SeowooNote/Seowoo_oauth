@@ -1,4 +1,4 @@
-## OAuth2.0 을 이용한 소셜 미디어 로그인 입니다. ##
+## OAuth2.0 을 이용한 소셜 미디어 로그인 입니다.(Github 연동 로그인) ##
 ### oauth-front ###
 npx create-react-app {프로젝트 명} --template typescript<br/>
 npm run start
@@ -29,3 +29,7 @@ implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1' 추가
 |**implement**||
 |**resource**||
 |**controller**||
+
+#### 깃허브 로그인 연결 ####
+github -> settings -> developer settings -> OAuth Apps -> Client Id, Client Secret 값 확인 후 설정(yml 파일)<br/>
+http://localhost:4040/oauth2/authorization/github -> 인증처리(github 에 요청) -> 응답받아 반환 -> 
